@@ -358,7 +358,7 @@ fun MenuItemCard(
                     fontWeight = FontWeight.Bold,
                 )
                 Text(
-                    text = "${menuItem.noOfRatings} ratings",
+                    text = "${menuItem.noOfRatings} рейтинг",
                 )
             }
         }

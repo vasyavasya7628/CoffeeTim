@@ -1,6 +1,6 @@
 package com.example.foodike.presentation.login
 
-data class FoodikeTextFieldState(
+data class CoffeeTimeFieldState(
     val text: String = "",
     val hint: String = "",
 )

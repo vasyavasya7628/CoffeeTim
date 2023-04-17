@@ -18,18 +18,18 @@ class LoginViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val _email = mutableStateOf(
-        FoodikeTextFieldState(
-            hint = "Enter email or phone number"
+        CoffeeTimeFieldState(
+            hint = "Почта или мобильный телефон"
         )
     )
-    val email: State<FoodikeTextFieldState> = _email
+    val email: State<CoffeeTimeFieldState> = _email
 
     private val _password = mutableStateOf(
-        FoodikeTextFieldState(
-            hint = "Password"
+        CoffeeTimeFieldState(
+            hint = "Пароль"
         )
     )
-    val password: State<FoodikeTextFieldState> = _password
+    val password: State<CoffeeTimeFieldState> = _password
 
     private val _eventFlow = MutableSharedFlow<UiEvent>()
     val eventFlow = _eventFlow.asSharedFlow()
@@ -49,7 +49,7 @@ class LoginViewModel @Inject constructor(
                 )
             }
             is LoginEvent.PerformLogin -> {
-                if (email.value.text == "abcxyz@gmail.com" && password.value.text == "abcdef"){
+                if (email.value.text == "" && password.value.text == ""){
                     repository.toggleLoginState()
                     event.onClick()
                 }
@@ -57,7 +57,7 @@ class LoginViewModel @Inject constructor(
                     viewModelScope.launch{
                         _eventFlow.emit(
                             UiEvent.ShowSnackbar(
-                                message = "Please enter correct email and password"
+                                message = "Пожалуйста, введите правильный адрес электронной почты и пароль"
                             )
                         )
                     }

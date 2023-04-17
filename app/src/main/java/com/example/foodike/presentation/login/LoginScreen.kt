@@ -195,7 +195,7 @@ fun LoginScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.goog_icon),
+                    painter = painterResource(id = R.drawable.gos_icon),
                     contentDescription = stringResource(R.string.login_with_google),
                     modifier = Modifier
                         .fillMaxSize(0.1f)
@@ -207,7 +207,7 @@ fun LoginScreen(
                 )
                 Spacer(modifier = Modifier.width(16.dp))
                 Image(
-                    painter = painterResource(id = R.drawable.fb_icon),
+                    painter = painterResource(id = R.drawable.ya_icon),
                     contentDescription = stringResource(R.string.login_with_facebook),
                     modifier = Modifier
                         .fillMaxSize(0.1f)
@@ -220,7 +220,7 @@ fun LoginScreen(
             }
             Spacer(modifier = Modifier.height(16.dp))
             Text(
-                text = stringResource(R.string.new_to_foodike),
+                text = stringResource(R.string.new_to_coffetime),
                 modifier = Modifier
                     .alpha(0.5f)
                     .clickable {

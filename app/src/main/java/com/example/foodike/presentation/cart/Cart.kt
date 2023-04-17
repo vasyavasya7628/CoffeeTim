@@ -84,12 +84,12 @@ fun Cart(
         item {
             DeliverySection(
                 Restaurant(
-                    name = "Relish",
+                    name = "Золотая чаша\n",
                     rating = 3.9,
                     noOfRatings = 258,
                     timeInMillis = 1800000,
-                    variety = "American, French",
-                    place = "Misamari",
+                    variety = "Русская кухня",
+                    place = "Юрия Двужильного, 2",
                     averagePrice = 1.0,
                     image = R.drawable.pizza,
                     menu = menu2
@@ -124,7 +124,7 @@ fun BillSection(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Text(text = "Bill  Details", fontWeight = FontWeight.Bold)
+                    Text(text = "Детали оплаты", fontWeight = FontWeight.Bold)
                 }
                 Spacer(modifier = Modifier.height(8.dp))
                 Row(
@@ -132,9 +132,9 @@ fun BillSection(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Column {
-                        Text(text = "Item total:")
-                        Text(text = "Taxes and charges:")
-                        Text(text = "Total:")
+                        Text(text = "Всего:")
+                        Text(text = "Налог:")
+                        Text(text = "Итог:")
                     }
                     Column {
                         Text(text = "$$itemTotal")
@@ -148,7 +148,7 @@ fun BillSection(
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Button(onClick = { /*TODO*/ }) {
-                        Text(text = "Proceed to Pay")
+                        Text(text = "Перейти к оплате")
                     }
                 }
 
@@ -189,11 +189,11 @@ fun DeliverySection(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Column {
-                        Text(text = "Location:")
-                        Text(text = "Estimated time:")
+                        Text(text = "Местоположение:")
+                        Text(text = "Оставшееся время:")
                     }
                     Column {
-                        Text(text = "Guwahati")
+                        Text(text = "Томск, Проспект Ленина 1")
                         Text(text = getTimeInMins(restaurant.timeInMillis))
                     }
 
@@ -243,7 +243,7 @@ fun ItemSection(
                             .fillMaxWidth()
                             .height(40.dp)
                     ) {
-                        Text(text = "Empty")
+                        Text(text = "Пусто")
                     }
                 }
                 Divider(
@@ -278,12 +278,12 @@ fun ItemSection(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text(
-                                text = "Write instruction for restaurant...",
+                                text = "Напишите инструкцию для ресторана...",
                                 modifier = Modifier.alpha(0.5f),
                             )
                             Icon(
                                 imageVector = Icons.Outlined.Edit,
-                                contentDescription = "Back",
+                                contentDescription = "Назад",
                                 modifier = Modifier.alpha(0.5f),
                             )
 
@@ -320,13 +320,13 @@ fun CartItemCard(
                 Image(
                     modifier = Modifier.size(18.dp),
                     painter = painterResource(id = R.drawable.ic_veg),
-                    contentDescription = "Vegetarian"
+                    contentDescription = "Вегетарианец"
                 )
             } else {
                 Image(
                     modifier = Modifier.size(16.dp),
                     painter = painterResource(id = R.drawable.ic_non_veg),
-                    contentDescription = "Non-Vegetarian"
+                    contentDescription = "Для всех"
                 )
             }
             Spacer(modifier = Modifier.width(8.dp))
@@ -412,7 +412,7 @@ fun CouponBar() {
                 onValueChange = { text = it },
                 placeholder = {
                     Text(
-                        text = "Add a coupon code...",
+                        text = "Добавить купон...",
                         modifier = Modifier.alpha(0.5f)
                     )
                 },
@@ -435,7 +435,7 @@ fun CouponBar() {
             )
             Row {
                 Text(
-                    text = "APPLY",
+                    text = "Применить",
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.clickable { },
                     color = MaterialTheme.colors.primary

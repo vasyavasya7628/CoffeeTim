@@ -20,7 +20,7 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun FoodikeTheme(content: @Composable () -> Unit) {
+fun CoffeeTimeTheme(content: @Composable () -> Unit) {
     val colors = LightColorPalette
 
     MaterialTheme(

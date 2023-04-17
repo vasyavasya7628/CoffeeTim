@@ -53,12 +53,12 @@ fun Profile(
                     .weight(0.7f)
             ) {
                 Text(
-                    text = "Andrew Howard",
+                    text = "Иванов Иван",
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                 )
                 Text(
-                    text = "andrewhoward@gmail.com ",
+                    text = "ivan.ivanov@yandex.ru ",
                     modifier = Modifier.alpha(0.5f),
                 )
 

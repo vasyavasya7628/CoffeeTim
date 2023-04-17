@@ -25,11 +25,11 @@ fun SearchBar() {
         modifier = Modifier.fillMaxWidth(),
         placeholder = {
             Text(
-                text = "Search",
+                text = "Поиск",
                 modifier = Modifier.alpha(0.5f)
             )
         },
-        leadingIcon = { Icon(imageVector = Icons.Outlined.Search, contentDescription = "Search") },
+        leadingIcon = { Icon(imageVector = Icons.Outlined.Search, contentDescription = "Поиск") },
 
         shape = CircleShape,
         colors = TextFieldDefaults.textFieldColors(

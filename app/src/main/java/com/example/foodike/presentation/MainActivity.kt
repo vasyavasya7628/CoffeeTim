@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.foodike.presentation.common.SplashViewModel
 import com.example.foodike.presentation.util.SetupNavigation
-import com.example.foodike.ui.theme.FoodikeTheme
+import com.example.foodike.ui.theme.CoffeeTimeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
         }
 
         setContent {
-            FoodikeTheme {
+            CoffeeTimeTheme {
                 val screen by splashViewModel.startDestination
 
                 Surface(

@@ -91,7 +91,7 @@ fun History(
 @ExperimentalPagerApi
 @Composable
 fun Tabs(pagerState: PagerState) {
-    val list = listOf("History", "Favourites")
+    val list = listOf("История", "Избранное")
     val scope = rememberCoroutineScope()
 
     TabRow(
@@ -209,7 +209,7 @@ fun HistorySection() {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Column() {
-                        Text(text = "Fish n Rolls", fontWeight = FontWeight.Bold)
+                        Text(text = "Рыба и роллы", fontWeight = FontWeight.Bold)
                         Text(
                             text = "Tezpur",
                             modifier = Modifier.alpha(0.5f),
@@ -338,14 +338,14 @@ fun HistorySection() {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Column() {
-                        Text(text = "Fish n Rolls", fontWeight = FontWeight.Bold)
+                        Text(text = "Рыба и роллы", fontWeight = FontWeight.Bold)
                         Text(
-                            text = "Tezpur",
+                            text = "Золотая осень",
                             modifier = Modifier.alpha(0.5f),
                         )
 
                         Text(
-                            text = "13 Aug 2022, 11:12 PM",
+                            text = "15 04 2023, 11:12",
                             modifier = Modifier.alpha(0.5f),
                         )
 
@@ -354,7 +354,7 @@ fun HistorySection() {
                         horizontalAlignment = Alignment.End,
                     ) {
                         Text(
-                            text = "$7.90",
+                            text = "560Р",
                         )
                     }
                 }
@@ -372,15 +372,15 @@ fun HistorySection() {
                         Image(
                             modifier = Modifier.size(16.dp),
                             painter = painterResource(id = R.drawable.ic_non_veg),
-                            contentDescription = "Non-Vegetarian"
+                            contentDescription = "Для всех"
                         )
                         Spacer(modifier = Modifier.width(8.dp))
 
-                        Text(text = "Chinese Shawarma\nCombo (1)", maxLines = 2)
+                        Text(text = "Шаурма \nКомбо (1)", maxLines = 2)
                     }
                     Row {
                         Button(onClick = { /*TODO*/ }) {
-                            Text(text = "Reorder")
+                            Text(text = "Заказать ещё")
                         }
                     }
 
@@ -397,7 +397,7 @@ fun HistorySection() {
 
                     Row {
                         Text(
-                            text = "Rate Order",
+                            text = "Оцените заказ",
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colors.primary,
                             fontSize = 16.sp,
@@ -413,12 +413,12 @@ fun HistorySection() {
 
                     Row() {
                         Text(
-                            text = "Delivered",
+                            text = "Доставлено",
                             modifier = Modifier.alpha(0.5f),
                         )
                         Icon(
                             imageVector = Icons.Filled.Circle,
-                            contentDescription = "Rating",
+                            contentDescription = "Рейтинг",
                             tint = MaterialTheme.colors.primary
                         )
 

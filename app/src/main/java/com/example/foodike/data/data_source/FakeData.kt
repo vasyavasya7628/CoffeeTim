@@ -6,23 +6,23 @@ import com.example.foodike.domain.model.*
 
 val menu1 = listOf(
     MenuItem(
-        dish = "Fish and Chips",
-        price = 3.95,
+        dish = "Рыба и роллы",
+        price = 400.95,
         rating = 4.7,
         noOfRatings = 12,
         isVegetarian = false
     ),
     MenuItem(
-        dish = "Guacamole with Chips",
-        price = 4.50,
+        dish = "Роллы",
+        price = 300.1,
         rating = 4.4,
         noOfRatings = 15,
 
         isVegetarian = true
     ),
     MenuItem(
-        dish = "Chicken Biryani",
-        price = 2.55,
+        dish = "Плов",
+        price = 130.0,
         rating = 4.9,
         noOfRatings = 22,
 
@@ -30,8 +30,8 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Kadai Paneer",
-        price = 3.55,
+        dish = "Мясное рагу",
+        price = 150.0,
         rating = 3.9,
         noOfRatings = 52,
 
@@ -39,8 +39,8 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Veg Pulao",
-        price = 5.00,
+        dish = "Плов",
+        price = 149.50,
         rating = 4.2,
         noOfRatings = 23,
 
@@ -48,8 +48,8 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Smoked Pork",
-        price = 3.75,
+        dish = "Копченая курица",
+        price = 200.4,
         rating = 4.8,
         noOfRatings = 56,
 
@@ -57,8 +57,8 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Veg Pakora",
-        price = 3.75,
+        dish = "Драники",
+        price = 60.50,
         rating = 2.9,
         noOfRatings = 43,
 
@@ -66,7 +66,7 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Cheese Omelette",
+        dish = "Сырный омлет",
         price = 1.15,
         rating = 3.9,
         noOfRatings = 60,
@@ -75,8 +75,8 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Chicken Tikka Roll",
-        price = 7.75,
+        dish = "Ролл с курицей",
+        price = 129.40,
         rating = 4.9,
         noOfRatings = 33,
 
@@ -84,8 +84,8 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Baby Corn",
-        price = 2.00,
+        dish = "Вареная кукуруза",
+        price = 60.0,
         rating = 3.9,
         noOfRatings = 55,
 
@@ -93,7 +93,7 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Veg Momo",
+        dish = "Вареники",
         price = 2.00,
         rating = 4.6,
         noOfRatings = 63,
@@ -103,8 +103,8 @@ val menu1 = listOf(
     ),
 
     MenuItem(
-        dish = "Chicken Momo",
-        price = 3.50,
+        dish = "Манты",
+        price = 75.3,
         rating = 4.9,
         noOfRatings = 80,
 
@@ -113,8 +113,8 @@ val menu1 = listOf(
     ),
 
     MenuItem(
-        dish = "Aloo Paratha",
-        price = 1.00,
+        dish = "Лепешка с сыром",
+        price = 30.0,
         rating = 2.9,
         noOfRatings = 17,
 
@@ -122,7 +122,7 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Mutton Pulao",
+        dish = "Плов с говядиной",
         price = 7.75,
         rating = 2.9,
         noOfRatings = 15,
@@ -131,7 +131,7 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Prawns Chilli",
+        dish = "Шашлык",
         price = 5.75,
         rating = 3.5,
         noOfRatings = 17,
@@ -140,7 +140,7 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Veg Fried Rice",
+        dish = "Рис с овощами",
         price = 3.75,
         rating = 4.1,
         noOfRatings = 42,
@@ -149,7 +149,7 @@ val menu1 = listOf(
 
     ),
     MenuItem(
-        dish = "Prawn Fried Rice",
+        dish = "Рис с морепродуктами",
         price = 6.75,
         rating = 4.9,
         noOfRatings = 52,
@@ -161,7 +161,7 @@ val menu1 = listOf(
 
 val menu2 = listOf(
     MenuItem(
-        dish = "Masala Dosa",
+        dish = "Бурито",
         price = 4.50,
         rating = 4.4,
         noOfRatings = 73,
@@ -169,7 +169,7 @@ val menu2 = listOf(
         isVegetarian = true
     ),
     MenuItem(
-        dish = "Papdi Chaat",
+        dish = "Пельмени",
         price = 2.55,
         rating = 4.9,
         noOfRatings = 33,
@@ -224,16 +224,16 @@ val menu2 = listOf(
 
     ),
     MenuItem(
-        dish = "Plain Dosa",
-        price = 3.95,
+        dish = "Блинчики",
+        price = 60.95,
         rating = 4.7,
         noOfRatings = 13,
         isVegetarian = true
     ),
 
     MenuItem(
-        dish = "Vada Pav",
-        price = 5.00,
+        dish = "Гамбургер",
+        price = 50.00,
         rating = 4.2,
         noOfRatings = 43,
 
@@ -243,8 +243,8 @@ val menu2 = listOf(
 
 
     MenuItem(
-        dish = "Kachori",
-        price = 3.75,
+        dish = "Котлеты",
+        price = 60.75,
         rating = 2.9,
         noOfRatings = 43,
 
@@ -252,7 +252,7 @@ val menu2 = listOf(
 
     ),
     MenuItem(
-        dish = "Gond Ladoo",
+        dish = "Вегетарианские котлеты",
         price = 1.15,
         rating = 3.9,
         noOfRatings = 66,
@@ -261,7 +261,7 @@ val menu2 = listOf(
 
     ),
     MenuItem(
-        dish = "Raskadam",
+        dish = "Вареные яйца",
         price = 7.75,
         rating = 4.9,
         noOfRatings = 13,
@@ -271,7 +271,7 @@ val menu2 = listOf(
     ),
 
     MenuItem(
-        dish = "Aloo Paratha",
+        dish = "Борщ",
         price = 1.00,
         rating = 2.9,
         noOfRatings = 23,
@@ -476,56 +476,56 @@ val menu3 = listOf(
 
 val restaurantList = listOf(
     Restaurant(
-        name = "George Street",
+        name = "Лодка",
         rating = 4.6,
         noOfRatings = 128,
         timeInMillis = 3540000,
-        variety = "Indian, American",
-        place = "Mahabhairab",
+        variety = "Американская кухня",
+        place = "Алтайская 120",
         averagePrice = 3.0,
         image = R.drawable.applepie,
         menu = menu1
     ),
     Restaurant(
-        name = "Magnolia",
+        name = "AsianFood",
         rating = 4.3,
         noOfRatings = 257,
         timeInMillis = 2100000,
-        variety = "North Indian",
-        place = "Ketekibari",
+        variety = "Азиатская кухня",
+        place = "Суворова 12",
         averagePrice = 2.0,
         image = R.drawable.dosa,
         menu = menu2
     ),
     Restaurant(
-        name = "Saffron Xpress",
+        name = "У Петровича",
         rating = 3.6,
         noOfRatings = 79,
         timeInMillis = 2580000,
-        variety = "Chinese",
-        place = "Mission Charali",
+        variety = "Русская кухня",
+        place = "Шахтеров 12",
         averagePrice = 3.5,
         image = R.drawable.chinese,
         menu = menu3
     ),
     Restaurant(
-        name = "KF",
+        name = "КФС",
         rating = 4.9,
         noOfRatings = 357,
         timeInMillis = 3300000,
-        variety = "North Indian, Vegetarian",
-        place = "B.P. Tiniali",
+        variety = "Фастфуд",
+        place = "Ленина 112",
         averagePrice = 4.0,
         image = R.drawable.burger,
         menu = menu3
     ),
     Restaurant(
-        name = "Inaya Mughlai",
+        name = "Золотая осень",
         rating = 2.6,
         noOfRatings = 221,
         timeInMillis = 1380000,
-        variety = "Tandoori, American",
-        place = "Goroimari",
+        variety = "Русская кухня",
+        place = "Кузнецкая 32",
         averagePrice = 2.0,
         image = R.drawable.biryani,
         menu = menu2
@@ -663,26 +663,26 @@ val restaurantList = listOf(
 
 val adList = listOf(
     Advertisement(
-        title = "Offers for you",
-        subTitle = "Upto 20% discount for you",
+        title = "Предложения",
+        subTitle = "Скидка до 20%",
         color = Color(0xFFE89191),
         image = R.drawable.chinese_bowl
     ),
     Advertisement(
-        title = "Free delivery",
-        subTitle = "Free delivery for selected restaurants",
+        title = "Бесплатная доставка",
+        subTitle = "Бесплатная доставка для выбранных ресторанов",
         color = Color(0xFFDBE891),
         image = R.drawable.rider
     ),
     Advertisement(
-        title = "Order groceries",
-        subTitle = "Order groceries from local vendors",
+        title = "Заказать продукты",
+        subTitle = "Заказывайте продукты у местных продавцов",
         color = Color(0xFF91CEE8),
         image = R.drawable.groceries
     ),
     Advertisement(
-        title = "Pay with UPI",
-        subTitle = "Get extra 15% discount with UPI payment",
+        title = "Оплатить онлайн",
+        subTitle = "Получите дополнительную скидку 15% при оплате",
         color = Color(0xFFA791E8),
         image = R.drawable.upi
 
@@ -693,87 +693,87 @@ val adList = listOf(
 val recommendedList = listOf(
     FoodItem(
         image = R.drawable.pizza,
-        name = "Pizza"
+        name = "Пицца"
     ),
     FoodItem(
         image = R.drawable.biryani,
-        name = "Biryani"
+        name = "Плов с курицей"
     ),
     FoodItem(
         image = R.drawable.burger,
-        name = "Burger"
+        name = "Бургер"
     ),
     FoodItem(
         image = R.drawable.chinese,
-        name = "Chinese"
+        name = "Вок"
     ),
     FoodItem(
         image = R.drawable.applepie,
-        name = "Apple Pie"
+        name = "Шарлотта"
     ),
     FoodItem(
         image = R.drawable.paratha,
-        name = "Paratha"
+        name = "Блинчики"
     ),
     FoodItem(
         image = R.drawable.dosa,
-        name = "Dosa"
+        name = "Блинчики с ветчиной и сыром"
     ),
 )
 
 val favouriteList = listOf(
     Restaurant(
-        name = "George Street",
+        name = "Лодка",
         rating = 4.6,
         noOfRatings = 128,
         timeInMillis = 3540000,
         variety = "Indian, American",
-        place = "Mahabhairab",
+        place = "Алтайская 120",
         averagePrice = 3.0,
         image = R.drawable.applepie,
         menu = menu1
     ),
     Restaurant(
-        name = "Saffron Xpress",
+        name = "Азиатское чудо",
         rating = 3.6,
         noOfRatings = 79,
         timeInMillis = 2580000,
-        variety = "Chinese",
-        place = "Mission Charali",
+        variety = "Китайская кухня",
+        place = "Фёдора-Лыткина 20",
         averagePrice = 3.5,
         image = R.drawable.chinese,
         menu = menu3
     ),
     Restaurant(
-        name = "KF",
+        name = "КФС",
         rating = 4.9,
         noOfRatings = 357,
         timeInMillis = 3300000,
-        variety = "North Indian, Vegetarian",
-        place = "B.P. Tiniali",
+        variety = "Фастфуд",
+        place = "Ленина 241",
         averagePrice = 4.0,
         image = R.drawable.burger,
         menu = menu3
     ),
     Restaurant(
-        name = "Inaya Mughlai",
+        name = "Чайка",
         rating = 2.6,
         noOfRatings = 221,
         timeInMillis = 1380000,
-        variety = "Tandoori, American",
-        place = "Goroimari",
+        variety = "Русская кухня, Белорусская кухня",
+        place = "Красноармейская 92",
         averagePrice = 2.0,
         image = R.drawable.biryani,
         menu = menu2
     ),
     Restaurant(
-        name = "Edona",
+        name = "Брянский бык",
         rating = 3.3,
         noOfRatings = 207,
         timeInMillis = 3060000,
-        variety = "Italian",
-        place = "Mission Charali",
-        averagePrice = 7.0,
+        variety = "Итальянская кухня",
+        place = "Ленина 10",
+        averagePrice = 70.0,
         image = R.drawable.paratha,
         menu = menu1
     ),
@@ -782,22 +782,22 @@ val favouriteList = listOf(
 val cartList = listOf(
     CartItem(
         MenuItem(
-            dish = "Paw Bhaaji",
-            price = 2.00,
+            dish = "Картофель с сыром",
+            price = 50.00,
             rating = 3.9,
             noOfRatings = 23,
-            isVegetarian = true
+            isVegetarian = false
         ),
         1
     ),
     CartItem(
         MenuItem(
-            dish = "Veg Pulao",
-            price = 5.00,
+            dish = "Голубцы",
+            price = 100.00,
             rating = 4.2,
             noOfRatings = 23,
 
-            isVegetarian = true
+            isVegetarian = false
 
         ),
         2

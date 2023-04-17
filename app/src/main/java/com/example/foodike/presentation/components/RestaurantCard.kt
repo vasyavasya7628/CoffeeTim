@@ -42,7 +42,7 @@ fun RestaurantCard(
         ) {
             Image(
                 painter = painterResource(id = restaurant.image),
-                contentDescription = "Restaurant",
+                contentDescription = "Ресторан",
                 modifier = Modifier
                     .size(130.dp, 170.dp)
                     .shadow(elevation = 0.dp, shape = RoundedCornerShape(8.dp), clip = true),
@@ -60,7 +60,7 @@ fun RestaurantCard(
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.star),
-                        contentDescription = "Rating",
+                        contentDescription = "Рейтинг",
                         modifier = Modifier
                             .size(20.dp)
                     )
@@ -96,7 +96,7 @@ fun RestaurantCard(
 
 fun getTimeInMins(timeInMillis: Long): String {
     var millis = timeInMillis
-    require(millis >= 0) { "Less than a minute" }
+    require(millis >= 0) { "Меньше минуты" }
     val days: Long = TimeUnit.MILLISECONDS.toDays(millis)
     millis -= TimeUnit.DAYS.toMillis(days)
     val hours: Long = TimeUnit.MILLISECONDS.toHours(millis)
@@ -106,10 +106,10 @@ fun getTimeInMins(timeInMillis: Long): String {
     val sb = StringBuilder(64)
     if (hours > 0) {
         sb.append(hours)
-        sb.append(" Hr ")
+        sb.append(" Ч ")
     }
     sb.append(minutes)
-    sb.append(" Min ")
+    sb.append(" Мин ")
     return sb.toString()
 }
 

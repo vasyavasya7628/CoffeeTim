@@ -1,10 +1,10 @@
 package com.example.foodike.presentation.home.util
 
 enum class Filter(val value: String) {
-    FASTDELIVERY("Fast Delivery"),
-    DISCOUNT("50% Discount"),
-    GREATDEALS("Great deals"),
-    NONVEG("Non-Veg")
+    FASTDELIVERY("Быстрая доставка"),
+    DISCOUNT("50% Скидка"),
+    GREATDEALS("Выгодные предложения"),
+    NONVEG("Для всех")
 
 }
 

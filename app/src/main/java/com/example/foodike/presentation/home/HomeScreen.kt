@@ -282,7 +282,7 @@ fun TopSection(navController: NavHostController) {
                     contentDescription = stringResource(R.string.location),
 
                     )
-                Text(text = "Guwahati")
+                Text(text = "Томск")
             }
         }
 
@@ -292,7 +292,7 @@ fun TopSection(navController: NavHostController) {
 
 @Composable
 fun GreetingSection(
-    userName: String = "Andrew"
+    userName: String = "Иван"
 ) {
     val c: Calendar = Calendar.getInstance()
     val timeOfDay: Int = c.get(Calendar.HOUR_OF_DAY)
@@ -300,13 +300,13 @@ fun GreetingSection(
         Text(
             text = when (timeOfDay) {
                 in 0..11 -> {
-                    "Good Morning!"
+                    "Доброе утро!"
                 }
                 in 12..15 -> {
-                    "Good Afternoon!"
+                    "Добрый день!"
                 }
                 else -> {
-                    "Good Evening!"
+                    "Добрый вечер!"
                 }
             },
             fontSize = 28.sp,
